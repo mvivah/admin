@@ -6,9 +6,9 @@
     <p>Welcome, {{ auth()->user()->name }}</p>
 
     <ul>
-        <li><a href="http://hrmis.local/login/sso">Open HRMIS</a></li>
-        <li><a href="http://fleet.local/login/sso">Open Fleet</a></li>
-        <li><a href="http://stores.local/login/sso">Open Stores</a></li>
+        <li><a href="https://hrmis.local/login/sso">Open HRMIS</a></li>
+        <li><a href="https://fleet.local/login/sso">Open Fleet</a></li>
+        <li><a href="https://stores.local/login/sso">Open Stores</a></li>
     </ul>
 
     <form method="POST" action="{{ url('/logout') }}">
