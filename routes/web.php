@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortalController;
 
 Route::get('/', fn() => redirect('/portal'));
@@ -13,4 +14,4 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->n
 
 // Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
